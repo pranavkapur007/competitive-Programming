@@ -1,3 +1,7 @@
+/**
+ * Question: Counting the triplets
+ */
+
 package gfg.topicWise.arrays;
 
 import java.io.BufferedReader;
