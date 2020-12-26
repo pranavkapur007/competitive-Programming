@@ -3,11 +3,11 @@
  * Given a sorted array of positive integers, rearrange the array alternately i.e
  * first element should be the maximum value, second minimum value, third-second max,
  * fourth-second min and so on.
- *
+ * <p>
  * Example:
  * Input: arr[] = {1, 2, 3, 4, 5, 6, 7}
  * Output: arr[] = {7, 1, 6, 2, 5, 3, 4}
- *
+ * <p>
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
@@ -36,10 +36,9 @@ public class RearrangeArrayAlternatively {
             for (int i = 0; i < n; i++)
                 temp[i] = Integer.parseInt(str[i]);
 
-            RearrangeAlternate obj = new RearrangeAlternate();
-
             //calling rearrange() function
-            obj.rearrange(temp, n);
+
+            rearrange(temp, n);
             StringBuffer sb = new StringBuffer();
 
             //appending and printing the elements
@@ -48,20 +47,13 @@ public class RearrangeArrayAlternatively {
             System.out.println(sb);
         }
     }
-}
-
-
-// } Driver Code Ends
-
-
-class RearrangeAlternate {
 
     // This function wants you to rearrange the temp array as required
     // and returns a StringBuffer with all elements of modified temp array
     // appended to it.
     // temp: input array
     // n: size of array
-    public static void rearrange(int arr[], int n) {
+    private static void rearrange(int arr[], int n) {
 
         // Your code here
         int left = 0;
